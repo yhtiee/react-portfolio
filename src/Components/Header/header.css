@@ -41,13 +41,13 @@ header{
 
 /* image */
 .me{
-    /* background: linear-gradient(var(--color-primary), transparent); */
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     width: 20rem;
     height: 30rem; 
     position: absolute;
     right: calc(50% - 9rem); 
     margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    border-radius: 2rem;
     
 }
 .scroll__down{
@@ -57,4 +57,19 @@ header{
     font-weight: bolder;
     font-size: x-large;
     transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1024px){
+  header{
+      height: 68vh;
+  }
+}
+  
+@media screen and (max-width: 600px){
+   header{
+       height: 100vh;
+   }
+   .header__socials, .scroll__down{
+       display: none;
+   }
 }
